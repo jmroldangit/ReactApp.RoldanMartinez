@@ -1,10 +1,30 @@
-import logo from ../logo.svg';
-const NavBar = () =>{
+
+
+export default function NavBar(){
+    return <nav>
+        <a href="/" className="titulo-nav">Titulo del sitio</a>
+        <ul>
+            <li>
+                <a>
+                    
+                </a>
+            </li>
+        </ul>
+    </nav>
+};
+export default function Navbar() {
     return (
-        <div>Hola grupo
-
-        </div>
-    )
-}
-
-export default NavBar;
+      <nav className="nav">
+        <a href="/" className="site-title">Site Name</a>
+        <ul>
+          <li className="active">
+            <a href="pricing">Pricing</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+     
+    );
+  }
