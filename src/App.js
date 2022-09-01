@@ -1,5 +1,6 @@
-
+import logo from './logo.svg';
 import NavBar from './components/NavBar';
+import './App.css';
 
 
 function App() {
@@ -8,9 +9,9 @@ function App() {
       <NavBar />
       <header className="App-header">
 
-        <img src={images / iconclock} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>Sarasa</code> and save to reload.
         </p>
         <a
           className="App-link"
