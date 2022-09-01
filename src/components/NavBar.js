@@ -1,17 +1,4 @@
 
-
-export default function NavBar(){
-    return <nav>
-        <a href="/" className="titulo-nav">Titulo del sitio</a>
-        <ul>
-            <li>
-                <a>
-                    
-                </a>
-            </li>
-        </ul>
-    </nav>
-};
 export default function Navbar() {
     return (
       <nav className="nav">

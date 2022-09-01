@@ -1,14 +1,5 @@
 
-import './App.css';
-import NavBar from './components';
-
-
-function App() {
-  console.log(window.location)
-    return <Navbar />
-
-    
-} 
+import NavBar from './components/NavBar';
 
 
 function App() {
@@ -16,8 +7,8 @@ function App() {
     <div className="App">
       <NavBar />
       <header className="App-header">
-        
-        <img src={images/iconclock} className="App-logo" alt="logo" />
+
+        <img src={images / iconclock} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
