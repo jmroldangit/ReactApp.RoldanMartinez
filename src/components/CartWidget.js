@@ -4,7 +4,7 @@ import React from 'react'
 export const CartWidget = () => {
   return (
     <>
-      <img src='./images/carro.png' className='App-logo'></img>
+      <img src="./images/carro.png" className='App-logo'></img>
     </>
     
   )

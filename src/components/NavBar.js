@@ -1,5 +1,5 @@
 import { CartWidget } from "./CartWidget";
-import ItemListContainer from "./itemListContainer";
+import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
 
 export default function Navbar() {
     return (
