@@ -5,17 +5,19 @@ import './App.css';
 
 
 
+
 function App() {
   return (
     <div className="App">
-      
+            
       <header className="App-header">
+      <h1>Wristore</h1>  
       <NavBar />
       <ItemListContainer />
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>Sarasa</code> and save to reload.
+          Edit <code>Wristore</code> and save to reload.
         </p>
         <a
           className="App-link"

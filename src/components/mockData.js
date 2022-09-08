@@ -2,7 +2,7 @@
 const data = [
     {
         id: "1",
-        title: "objetouno",
+        title: "Festina",
         price: 100,
         image: "https://www.swarovski.com.ar/arquivos/ids/586245-1000-1000/Name_6961.jpg?v=637874513711930000"
     },

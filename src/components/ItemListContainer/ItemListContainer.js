@@ -2,10 +2,12 @@ import data from "../mockData";
 import { useEffect, useState } from "react";
 import { CartWidget } from "../CartWidget";
 import ItemList from "../ItemListContainer/ItemList";
+import ItemCount from "../Item/ItemCount";
+
 
 export default function ItemListContainer(props) {
 
-const ItemListContainer = () => {
+
     const [productList, setProductList] = useState([]);
 
     useEffect(() => {
@@ -26,9 +28,9 @@ const ItemListContainer = () => {
 
     return (
         <>
+       
             <ItemList lista={productList} />
-            <h2>{greeting}</h2>
-            <a href="/" className="site-title">{props.title}</a>
+            
             <ul>
                 <li className="active">
                     <a href="pricing">Pricing</a>
@@ -43,6 +45,6 @@ const ItemListContainer = () => {
             </ul>
         </>
     )
-}}
+}
 
 
