@@ -1,23 +1,16 @@
 import React from 'react'
-import Item from "../Item"
 
 
-export default ItemDetail
-
-const ItemDetail = ({ lista }) => {
+const ItemDetail = ({ item, onBack }) => {
     return (
         <div>
-            {lista.map((product) => (
-                <div key={product.id}>
-                    <ItemDetail 
-                    title={product.title} 
-                    price={product.price} 
-                    image={product.image} 
-                    />
-        </div>    ))};
+            <img width={"150px"} src={item.image} alt={item.title}/>
+            <h2>{item.title}</h2> 
+            <h3>{item.price}</h3>
+            <button onClick={()=> onBack()}>Volver</button>
         </div>
-        
-    );
-};
+      ) 
+ 
+ };
 
-
+ export default ItemDetail

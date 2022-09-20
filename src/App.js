@@ -1,5 +1,5 @@
 
-import logo from './logo.svg';
+
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import './App.css';
@@ -16,8 +16,7 @@ function App() {
         <header className="row">
       <h1>Wristore</h1>  
       
-        <img src={logo} className="App-logo" alt="logo" />
-        
+           
       </header>
       <div   className="row">
         <div className='col'>

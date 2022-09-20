@@ -3,12 +3,15 @@ import { useEffect, useState } from "react";
 import { CartWidget } from "../CartWidget";
 import ItemList from "../ItemListContainer/ItemList";
 import ItemCount from "../Item/ItemCount";
+import { ItemDetailContainer } from "../ItemDetailContainer/ItemDetailContainer";
 
 
 export default function ItemListContainer(props) {
 
 
-    const [productList, setProductList] = useState([]);
+    const [productList, setProductList] = useState([]); 
+
+    const [product, setProduct] = useState(null);
 
     useEffect(() => {
         getProducts
@@ -28,8 +31,10 @@ export default function ItemListContainer(props) {
 
     return (
         <>
-       
-            <ItemList lista={productList} />
+       {product && <ItemDetailContainer item={product} onBack={()=> setProduct (null)}/>}
+           {!product && <ItemList lista={productList}
+            onItemClick={(item)=> setProduct(item)} />
+    }
             
             <ul>
                 <li className="active">

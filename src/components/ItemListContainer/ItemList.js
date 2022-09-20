@@ -1,10 +1,10 @@
 import Item from "../Item/Item";
 
-const ItemList = ({ lista }) => {
+const ItemList = ({ lista, onItemClick }) => {
     return (
         <div>
             {lista.map((product) => (
-                <div key={product.id}>
+                <div style={{cursor:"pointer"}} key={product.id} onClick={()=> onItemClick(product)}>
                     <Item 
                     title={product.title} 
                     price={product.price} 
